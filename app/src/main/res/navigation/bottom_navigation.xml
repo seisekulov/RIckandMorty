@@ -11,14 +11,14 @@
         tools:layout="@layout/fragment_character" />
     <fragment
         android:id="@+id/location_navigation"
-        android:name="com.seisekulov.rickandmorty.LocationsFragment"
+        android:name="com.seisekulov.rickandmorty.locations.LocationsFragment"
         tools:layout="@layout/fragment_locations" />
     <fragment
         android:id="@+id/episodes_navigation"
-        android:name="com.seisekulov.rickandmorty.EpisodesFragment"
+        android:name="com.seisekulov.rickandmorty.episodes.EpisodesFragment"
         tools:layout="@layout/fragment_episodes" />
     <fragment
         android:id="@+id/settings_navigation"
-        android:name="com.seisekulov.rickandmorty.SettingsFragment"
+        android:name="com.seisekulov.rickandmorty.settings.SettingsFragment"
         tools:layout="@layout/fragment_settings" />
 </navigation>

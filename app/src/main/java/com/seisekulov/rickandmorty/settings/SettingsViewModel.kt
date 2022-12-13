@@ -1,4 +1,4 @@
-package com.seisekulov.rickandmorty
+package com.seisekulov.rickandmorty.settings
 
 import androidx.lifecycle.ViewModel
 

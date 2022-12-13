@@ -1,4 +1,4 @@
-package com.seisekulov.rickandmorty
+package com.seisekulov.rickandmorty.locations
 
 import androidx.lifecycle.ViewModel
 

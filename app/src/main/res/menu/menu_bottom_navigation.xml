@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
         android:id="@+id/character_navigation"
         android:icon="@drawable/ic_character_bar"
-        android:title="Персонажи" />
+        android:title="@string/character_string" />
     <item
         android:id="@+id/location_navigation"
         android:icon="@drawable/ic_location_bar"
-        android:title="Локации" />
+        android:title="@string/locations_string" />
     <item
         android:id="@+id/episodes_navigation"
         android:icon="@drawable/ic_episodes_bar"
-        android:title="Эпизоды" />
+        android:title="@string/episodes_string" />
     <item
         android:id="@+id/settings_navigation"
         android:icon="@drawable/ic_settings_bar"
-        android:title="Настройки" />
+        android:title="@string/settings_string" />
 </menu>
