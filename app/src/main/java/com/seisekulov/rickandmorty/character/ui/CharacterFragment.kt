@@ -14,5 +14,5 @@ class CharacterFragment : Fragment(R.layout.fragment_character) {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(CharacterViewModel::class.java)
-    }K
+    }
 }
