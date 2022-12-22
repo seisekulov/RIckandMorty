@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.seisekulov.rickandmorty.R
+import com.seisekulov.rickandmorty.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {
 
@@ -15,12 +15,14 @@ class SettingsFragment : Fragment() {
     }
 
     private lateinit var viewModel: SettingsViewModel
+    lateinit var binding:FragmentSettingsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        binding=FragmentSettingsBinding.inflate(layoutInflater,container,false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

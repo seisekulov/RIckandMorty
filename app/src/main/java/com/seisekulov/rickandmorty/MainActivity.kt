@@ -5,13 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.seisekulov.rickandmorty.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val navigationView: BottomNavigationView = findViewById(R.id.navigation_view)
+        binding=ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val navigationView: BottomNavigationView = binding.navigationView
         val navigationController = findNavController(R.id.nav_host_fragment_container)
         navigationView.setupWithNavController(navigationController)
     }
