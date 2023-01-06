@@ -1,4 +1,4 @@
-package com.seisekulov.rickandmorty.character.adapter
+package com.seisekulov.rickandmorty.character.ui.adapter
 
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView

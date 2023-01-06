@@ -1,4 +1,4 @@
-package com.seisekulov.rickandmorty.character.adapter
+package com.seisekulov.rickandmorty.character.ui.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
