@@ -4,4 +4,7 @@
     <string name="locations_string">Локации</string>
     <string name="episodes_string">Эпизоды</string>
     <string name="settings_string">Настройки</string>
+    <string name="alive">Живой</string>
+    <string name="dead">Мертвый</string>
+    <string name="unknown">Неизвестно</string>
 </resources>
