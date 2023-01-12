@@ -3,7 +3,9 @@ package com.seisekulov.rickandmorty.character.ui
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.map
+import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
+import androidx.paging.cachedIn
 import androidx.paging.map
 import com.seisekulov.rickandmorty.R
 import com.seisekulov.rickandmorty.character.data.CharacterRepository
@@ -41,4 +43,5 @@ class CharacterViewModel @Inject constructor(
                 )
             }
         }
+        .cachedIn(viewModelScope)
 }
