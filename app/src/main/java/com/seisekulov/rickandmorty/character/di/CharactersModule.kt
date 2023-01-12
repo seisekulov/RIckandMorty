@@ -3,8 +3,8 @@ package com.seisekulov.rickandmorty.character.di
 import com.seisekulov.rickandmorty.character.data.CharacterRepository
 import com.seisekulov.rickandmorty.character.data.CharacterRepositoryImpl
 import com.seisekulov.rickandmorty.character.data.remote.CharacterApi
-import com.seisekulov.rickandmorty.character.data.remote.CharacterRemoteDatasource
-import com.seisekulov.rickandmorty.character.data.remote.CharacterRemoteDatasourceImpl
+import com.seisekulov.rickandmorty.character.data.remote.CharacterRemoteDataSource
+import com.seisekulov.rickandmorty.character.data.remote.CharacterRemoteDataSourceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -24,8 +24,8 @@ abstract class CharactersModule {
 
     @Binds
     abstract fun bindRemoteDatasource(
-        characterRemoteDatasourceImpl: CharacterRemoteDatasourceImpl,
-    ): CharacterRemoteDatasource
+        characterRemoteDatasourceImpl: CharacterRemoteDataSourceImpl,
+    ): CharacterRemoteDataSource
 
     companion object {
 
@@ -35,5 +35,4 @@ abstract class CharactersModule {
             return retrofit.create(CharacterApi::class.java)
         }
     }
-
 }
