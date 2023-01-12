@@ -25,7 +25,7 @@ class CharacterFragment : Fragment(R.layout.fragment_character) {
         viewBinding.rvCharacters.adapter = adapter
 
         viewModel.characters.observe(viewLifecycleOwner) {
-            adapter.setItems(it)
+            adapter.submitData(viewLifecycleOwner.lifecycle, it)
         }
     }
 

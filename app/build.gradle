@@ -61,6 +61,7 @@ dependencies {
 
     //DaggerHilt
     implementation "com.google.dagger:hilt-android:2.44.2"
+    implementation 'androidx.paging:paging-common-ktx:3.1.1'
     kapt "com.google.dagger:hilt-compiler:2.44.2"
 
     // Retrofit
@@ -86,4 +87,7 @@ dependencies {
 
     //ViewBinding
     implementation 'com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.6'
+
+    //Paging
+    implementation("androidx.paging:paging-runtime:3.1.1")
 }
